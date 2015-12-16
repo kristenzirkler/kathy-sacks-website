@@ -1,0 +1,81 @@
+$intro-height: 520px;
+$home-picture-size: 124px;
+
+.home-intro {
+  background: $main-color;
+  color: $page-background;
+  position: fixed;
+  top: $nav-height; left: 0; right: 0;
+  z-index: 1;
+  height: $intro-height;
+  .inner {
+    max-width: $page-size;
+    margin: 0 auto;
+    padding: 100px $mobile-side-space;
+  }
+  h1 {
+    font-size: 50px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    display: block;
+
+  }
+  h2 {
+    font-weight: 300;
+    display: block;
+  }
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+}
+.home-posts {
+  background: $page-background;
+  position: relative;
+  z-index: 2;
+  margin-top: ($intro-height + $nav-height);
+  .inner {
+    max-width: $page-size;
+    margin: 0 auto;
+    padding: 100px $mobile-side-space;
+  }
+  a {
+    display: block;
+    overflow: hidden;
+    padding: 40px 0;
+  }
+  strong {
+    font-size: 32px;
+    display: block;
+    color: $black;
+    font-family: $accent-font;
+    margin-bottom: 10px;
+
+  }
+  span {
+    font-size: 16px;
+    line-height: 1.5em;
+    color: $gray-dark;
+  }
+  em {
+    text-decoration: underline;
+
+  }
+  &:before {
+    position: absolute;
+    line-height: $home-picture-size;
+    width: $home-picture-size;
+    height: $home-picture-size;
+    top: -($home-picture-size/2);
+    margin-left: -($home-picture-size/2);
+    left: 50%;
+    content: 'pic';
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    color: #ccc;
+    background: $black;
+    border: 10px solid $white;
+    box-shadow: 0 0 10px rgba($black,.1);
+  }
+}

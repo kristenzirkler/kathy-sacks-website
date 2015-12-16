@@ -1,22 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,400,700|Sumana:400,700|Nixie+One|Martel:400,700|Delius|Karma:400,700|Slabo+13px|Suranna);
+
 $body-background: #fff;
 
 $page-background: $body-background;
 
-$main-color: #7dc52f;
+$main-color: #006b86; //teal
 
+$white: #ffffff;
 $gray-lightest: #f5f4f2;
 $gray-light: #d4d4d2;
 $gray: #8d9095;
+$gray-dark: #545558;
+$black: #000000;
 
-$font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-$accent-font: Arial, 'Lucida Grande', sans-serif;
+$font-family: 'Work Sans', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+//$accent-font: $font-family;
+$accent-font: 'Suranna', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+/*
+font-family: 'Work Sans', sans-serif;
+font-family: 'Karma', serif;
+font-family: 'Sumana', serif;
+font-family: 'Suranna', serif;
 
+font-family: 'Nixie One', cursive;
+*/
 $font-color: #000;
 $link: $main-color;
 
 $error: #d92424;
 
-$page-size: 960px;
+$page-size: 700px;
 
 $desktop-side-space: 20px;
 $mobile-side-space: 30px;

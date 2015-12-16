@@ -7,6 +7,7 @@
 @import 'icons';
 @import 'site-frame';
 @import 'buttons';
+@import 'home-slides';
 
 * {
   -webkit-box-sizing: border-box;
@@ -20,6 +21,7 @@ body {
 }
 body, button, label {
   font-family: $font-family;
+  font-weight: 300;
 }
 a {
   color: $link;
@@ -48,8 +50,9 @@ p {
 }
 
 // Headers
-h1, h2, h3, h4 {
+h1 {
   font-family: $accent-font;
+  font-weight: normal;
 }
 h1 {
   font-size: 32px;
