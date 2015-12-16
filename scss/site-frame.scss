@@ -2,17 +2,20 @@ $nav-height: 60px;
 $footer-height: 50px;
 
 body {
-	margin-top: $nav-height;
+	//margin-top: $nav-height;
 }
 
 .site-navigation {
 	@include transition(all 1s);
-	//background: #fff;
+	background: $main-color;
 	//box-shadow: 0 0 10px rgba(#000,.3);
 
 	position: fixed;
 	top: 0; left: 0; right: 0;
 	z-index: 100;
+	&.sticky {
+		
+	}
 	a {
 		color: $main-color;
 	}

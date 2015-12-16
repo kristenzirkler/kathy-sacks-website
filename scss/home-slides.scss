@@ -1,11 +1,11 @@
 $intro-height: 520px;
-$home-picture-size: 124px;
+$home-picture-size: 150px;
 
 .home-intro {
   background: $main-color;
   color: $page-background;
   position: fixed;
-  top: $nav-height; left: 0; right: 0;
+  top: 0; left: 0; right: 0;
   z-index: 1;
   height: $intro-height;
   .inner {
@@ -29,11 +29,29 @@ $home-picture-size: 124px;
     text-decoration: underline;
   }
 }
+.kathy-photo {
+  position: absolute;
+  line-height: $home-picture-size;
+  width: $home-picture-size;
+  height: $home-picture-size;
+  top: -($home-picture-size/2);
+  margin-left: -($home-picture-size/2);
+  left: 50%;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  border: 10px solid $white;
+  box-shadow: 0 0 15px rgba($black,.1);
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
 .home-posts {
   background: $page-background;
   position: relative;
   z-index: 2;
-  margin-top: ($intro-height + $nav-height);
+  margin-top: ($intro-height);
   .inner {
     max-width: $page-size;
     margin: 0 auto;
@@ -60,22 +78,5 @@ $home-picture-size: 124px;
   em {
     text-decoration: underline;
 
-  }
-  &:before {
-    position: absolute;
-    line-height: $home-picture-size;
-    width: $home-picture-size;
-    height: $home-picture-size;
-    top: -($home-picture-size/2);
-    margin-left: -($home-picture-size/2);
-    left: 50%;
-    content: 'pic';
-    display: block;
-    border-radius: 50%;
-    text-align: center;
-    color: #ccc;
-    background: $black;
-    border: 10px solid $white;
-    box-shadow: 0 0 10px rgba($black,.1);
   }
 }
