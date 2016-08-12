@@ -33,6 +33,8 @@ $page-size: 700px;
 
 $desktop-side-space: 20px;
 $mobile-side-space: 30px;
+$intro-height: 520px;
+$home-picture-size: 150px;
 
 @mixin transition($transitions) {
     -webkit-transition: $transitions;

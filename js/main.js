@@ -15,8 +15,10 @@ $(function(){
 
 		if (y > t) {
 		    $('.site-navigation').addClass('sticky');
+		    $('.site-navigation .logo').attr('src','');
 		} else {
 		    $('.site-navigation').removeClass('sticky');
+		    $('.site-navigation .logo').attr('src','');
 		}
 	}
 	// Scroll Functions

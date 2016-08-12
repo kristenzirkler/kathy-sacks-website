@@ -1,6 +1,8 @@
-$intro-height: 520px;
-$home-picture-size: 150px;
+.home {
+  .kathy-photo {
 
+  }
+}
 .home-intro {
   background: $main-color;
   color: $page-background;
@@ -27,24 +29,6 @@ $home-picture-size: 150px;
   a {
     color: $white;
     text-decoration: underline;
-  }
-}
-.kathy-photo {
-  position: absolute;
-  line-height: $home-picture-size;
-  width: $home-picture-size;
-  height: $home-picture-size;
-  top: -($home-picture-size/2);
-  margin-left: -($home-picture-size/2);
-  left: 50%;
-  display: block;
-  border-radius: 50%;
-  text-align: center;
-  border: 10px solid $white;
-  box-shadow: 0 0 15px rgba($black,.1);
-  overflow: hidden;
-  img {
-    width: 100%;
   }
 }
 .home-posts {

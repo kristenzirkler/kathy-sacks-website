@@ -7,14 +7,15 @@ body {
 
 .site-navigation {
 	@include transition(all 1s);
-	background: $main-color;
 	//box-shadow: 0 0 10px rgba(#000,.3);
 
 	position: fixed;
 	top: 0; left: 0; right: 0;
 	z-index: 100;
 	&.sticky {
-		
+		ul a {
+			color: $black;
+		}
 	}
 	a {
 		color: $main-color;
@@ -57,8 +58,26 @@ body {
 		font-weight: bold;
 	}
 	a {
-		color: $black;
+		color: $white;
 	}
+}
+.kathy-photo {
+  position: absolute;
+  line-height: $home-picture-size;
+  width: $home-picture-size;
+  height: $home-picture-size;
+  top: -($home-picture-size/2);
+  margin-left: -($home-picture-size/2);
+  left: 50%;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  border: 10px solid $white;
+  box-shadow: 0 0 15px rgba($black,.1);
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
 }
 .footer {
 	background: $main-color;
